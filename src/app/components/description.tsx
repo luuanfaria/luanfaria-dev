@@ -19,18 +19,18 @@ export function Description() {
 
   return (
     <div className="w-full min-h-[200px] max-sm:min-h-[500px] mt-6 overflow-hidden">
-      {/* <AnimatePresence mode="wait"> */}
-      <motion.p
-        key={currentDescription}
-        className="text-6xl text-white text-center px-8 font-semibold w-full max-sm:text-left"
-        initial={{ opacity: 0, x: -200 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: 200 }}
-        transition={{ duration: 2 }}
-      >
-        {descriptions[currentDescription]}
-      </motion.p>
-      {/* </AnimatePresence> */}
+      <AnimatePresence mode="wait">
+        <motion.p
+          key={currentDescription}
+          className="text-6xl text-white text-center px-8 font-semibold w-full max-sm:text-left"
+          initial={{ opacity: 0, x: -200 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: 200 }}
+          transition={{ duration: 2 }}
+        >
+          {descriptions[currentDescription]}
+        </motion.p>
+      </AnimatePresence>
     </div>
   )
 }
