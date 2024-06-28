@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="flex flex-col bg-black h-screen w-full items-center">
+    <main className="flex flex-col h-screen w-full items-center">
       <header className="flex items-center justify-center h-[60px] w-[60] fixed pt-4 z-[100]">
         <Image src="/logo-white.png" alt="" width={60} height={60} />
       </header>
@@ -20,7 +20,7 @@ export default function Home() {
 
         <Description />
 
-        <h4 className="text-zinc-400 text-xl max-sm:px-8 items-center text-center">
+        <h4 className="text-zinc-400 text-xl max-sm:px-8 items-center text-center font-light">
           Hello 👋🏼 I am Luan Faria a Fullstack Web Developer
         </h4>
 

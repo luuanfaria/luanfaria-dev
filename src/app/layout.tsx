@@ -1,8 +1,18 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Anton, Roboto } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const anton = Anton({
+  weight: ['400'],
+  variable: '--font-anton',
+  subsets: ['latin'],
+})
+
+const roboto = Roboto({
+  weight: ['400', '100', '300', '500', '700', '900'],
+  variable: '--font-roboto',
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   title: 'Luan Faria Developer',
@@ -16,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${anton.variable} ${roboto.variable}`}>{children}</body>
     </html>
   )
 }

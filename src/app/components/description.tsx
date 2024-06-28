@@ -22,7 +22,7 @@ export function Description() {
       <AnimatePresence mode="wait">
         <motion.p
           key={currentDescription}
-          className="text-6xl text-white text-center px-8 font-semibold w-full max-sm:text-left"
+          className="text-6xl text-white text-center px-8 font-semibold w-full max-sm:text-left title"
           initial={{ opacity: 0, x: -200 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 200 }}
