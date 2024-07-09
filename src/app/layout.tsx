@@ -1,32 +1,29 @@
+import { ReactNode } from 'react'
 import type { Metadata } from 'next'
-import { Anton, Roboto } from 'next/font/google'
-import './globals.css'
+// eslint-disable-next-line camelcase
+import { Plus_Jakarta_Sans } from 'next/font/google'
+import '@/styles/globals.css'
 
-const anton = Anton({
-  weight: ['400'],
-  variable: '--font-anton',
-  subsets: ['latin'],
-})
-
-const roboto = Roboto({
-  weight: ['400', '100', '300', '500', '700', '900'],
-  variable: '--font-roboto',
+const jakarta = Plus_Jakarta_Sans({
+  weight: ['200', '300', '400', '500', '600', '700', '800'],
+  variable: '--font-sans',
   subsets: ['latin'],
 })
 
 export const metadata: Metadata = {
-  title: 'Luan Faria Developer',
-  description: 'Experienced FullStack Software Engineer',
+  title: 'Luan Faria - Web Developer',
+  description:
+    'Experienced FullStack Software Engineer. I help business crafting smart digital solutions',
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+interface RootLayoutProps {
+  children: ReactNode
+}
+
+export default async function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className={`${anton.variable} ${roboto.variable}`}>{children}</body>
+      <body className={`${jakarta.variable}`}>{children}</body>
     </html>
   )
 }
