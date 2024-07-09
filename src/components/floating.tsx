@@ -2,10 +2,12 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Mailbox, Moon, Sun } from '@phosphor-icons/react/dist/ssr'
+import Link from 'next/link'
+import { useLanguage } from '@/context/languageProvider'
 
 export function FloatingMenu() {
   const [isDarkMode, setIsDarkMode] = useState(false)
-  const [language, setLanguage] = useState('en')
+  const { language, setLanguage } = useLanguage()
 
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode)
@@ -37,12 +39,12 @@ export function FloatingMenu() {
         <span className="">{language.toUpperCase()}</span>
       </button>
 
-      <a
-        href="#contact"
+      <Link
+        href="mailto:luuan.fariaf@gmail.com"
         className="p-2 rounded-full bg-secondary transition-colors"
       >
         <Mailbox size={24} />
-      </a>
+      </Link>
     </motion.div>
   )
 }

@@ -1,8 +1,24 @@
+'use client'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { useLanguage } from '@/context/languageProvider'
 import { GithubLogo, LinkedinLogo } from '@phosphor-icons/react/dist/ssr'
 import Link from 'next/link'
 
+const dictionary = {
+  en: {
+    description: 'Web Developer, Explorer, Coffee Lover.',
+    available: 'Available for Work',
+  },
+  pt: {
+    description: 'Desenvolvedor Web, Explorador, Amante de café.',
+    available: 'Disponível para Trabalho',
+  },
+}
+
 export function Header() {
+  const { language } = useLanguage()
+  const texts = language === 'en' ? dictionary.en : dictionary.pt
+
   return (
     <header className="flex gap-2 justify-between max-w-[660px] w-full mx-auto items-center">
       <div className="flex items-center gap-2">
@@ -16,7 +32,7 @@ export function Header() {
             Luan Faria
           </span>
           <span className="text-black/70 dark:text-zinc-400 font-light text-xs">
-            Web Developer, Explorer, Coffe Lover.
+            {texts.description}
           </span>
         </div>
       </div>
@@ -29,7 +45,7 @@ export function Header() {
           </span>
 
           <span className="font-sans font-normal text-base text-green-500">
-            Available for Work
+            {texts.available}
           </span>
         </div>
 

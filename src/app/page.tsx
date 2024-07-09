@@ -6,21 +6,24 @@ import { Hero } from '@/components/hero'
 import { Services } from '@/components/services'
 import { Talk } from '@/components/talk'
 import { Works } from '@/components/works'
+import { LanguageProvider } from '@/context/languageProvider'
 
 export default function Home() {
   return (
-    <div className="flex flex-col mx-auto py-12 font-sans gap-16 max-sm:px-6">
-      <Header />
-      <Hero />
+    <LanguageProvider>
+      <div className="flex flex-col mx-auto py-12 font-sans gap-16 max-sm:px-6">
+        <Header />
+        <Hero />
 
-      <Divisor />
+        <Divisor />
 
-      <Works />
-      <Services />
-      <FloatingMenu />
-      <Talk />
+        <Works />
+        <Services />
+        <FloatingMenu />
+        <Talk />
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </LanguageProvider>
   )
 }

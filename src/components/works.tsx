@@ -1,3 +1,4 @@
+'use client'
 import { Briefcase } from '@phosphor-icons/react/dist/ssr'
 import Image from 'next/image'
 import {
@@ -7,6 +8,18 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel'
+import { useLanguage } from '@/context/languageProvider'
+
+const dictionary = {
+  en: {
+    title: 'Latest Work',
+    description: `Some of the recent projects I've worked on.`,
+  },
+  pt: {
+    title: 'Projetos Recentes',
+    description: `Alguns projetos que trabalhei recentemente.`,
+  },
+}
 
 const customers = [
   {
@@ -32,14 +45,15 @@ const customers = [
 ]
 
 export function Works() {
+  const { language } = useLanguage()
+  const texts = language === 'en' ? dictionary.en : dictionary.pt
+
   return (
     <div className="flex flex-col w-full mx-auto items-center">
       <div className="flex flex-col gap-2 max-w-[660px] w-full">
         <Briefcase size={22} />
-        <h2 className="text-xl">Latest Work</h2>
-        <p className="text-zinc-400 text-sm">
-          Some of the recent projects I&apos;ve worked on.
-        </p>
+        <h2 className="text-xl">{texts.title}</h2>
+        <p className="text-zinc-400 text-sm">{texts.description}</p>
       </div>
 
       <Carousel

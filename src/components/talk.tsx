@@ -1,8 +1,27 @@
+'use client'
 import { HandWaving } from '@phosphor-icons/react/dist/ssr'
 import { Card, CardContent, CardFooter, CardHeader } from './ui/card'
 import { Button } from './ui/button'
+import { useLanguage } from '@/context/languageProvider'
+import Link from 'next/link'
+
+const dictionary = {
+  en: {
+    title: `Let's create something amazing?`,
+    description: `Now that you've come this far, let's work together on your next project?`,
+    button: 'Get in touch',
+  },
+  pt: {
+    title: 'Vamos criar algo incrível?',
+    description: `Agora que você chegou tão longe, vamos trabalhar juntos em seu próximo projeto?`,
+    button: 'Entre em contato',
+  },
+}
 
 export function Talk() {
+  const { language } = useLanguage()
+  const texts = language === 'en' ? dictionary.en : dictionary.pt
+
   return (
     <div className="flex flex-col w-full max-w-[660px] mx-auto items-center mt-8">
       <div className="flex flex-col w-full">
@@ -14,17 +33,14 @@ export function Talk() {
             </CardHeader>
             <CardContent>
               <div className="flex gap-2 text-xl items-center">
-                <h2 className="text-xl">
-                  Let&apos;s create something amazing?
-                </h2>
+                <h2 className="text-xl">{texts.title}</h2>
               </div>
-              <p className="text-sm text-zinc-600 mt-1">
-                Now that you&apos;ve come this far, let&apos;s work together on
-                your next project?
-              </p>
+              <p className="text-sm text-zinc-600 mt-1">{texts.description}</p>
             </CardContent>
             <CardFooter>
-              <Button variant="secondary">Get In Touch</Button>
+              <Link href="mailto:luuan.fariaf@gmail.com" target="_blank">
+                <Button variant="secondary">{texts.button}</Button>
+              </Link>
             </CardFooter>
           </div>
         </Card>
