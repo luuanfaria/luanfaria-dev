@@ -38,7 +38,7 @@ export function Talk() {
               <p className="text-sm text-zinc-600 mt-1">{texts.description}</p>
             </CardContent>
             <CardFooter>
-              <Link href="mailto:luuan.fariaf@gmail.com" target="_blank">
+              <Link href="mailto:hello@luandev.com.br" target="_blank">
                 <Button variant="secondary">{texts.button}</Button>
               </Link>
             </CardFooter>

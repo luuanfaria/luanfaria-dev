@@ -32,7 +32,7 @@ export function Hero() {
   useEffect(() => {
     const handleKeyPress = (event: KeyboardEvent) => {
       if (event.key === 's' || event.key === 'S') {
-        window.location.href = 'mailto:luuan.fariaf@gmail.com'
+        window.location.href = 'mailto:hello@luandev.com.br'
       }
     }
 
@@ -58,7 +58,7 @@ export function Hero() {
       </p>
 
       <Link
-        href="mailto:luuan.fariaf@gmail.com"
+        href="mailto:hello@luandev.com.br"
         target="_blank"
         className="block mt-4 md:hidden"
       >

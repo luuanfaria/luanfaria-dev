@@ -37,7 +37,7 @@ const dictionary = {
       },
       {
         title: 'Web Maintenance',
-        price: 'From $200',
+        price: 'From $37/hour',
         description:
           'Does your website need maintenance? If you already have a website or system that you want to keep updated, we offer support and maintenance services for websites.',
         icon: <Wrench size={22} />,
@@ -71,7 +71,7 @@ const dictionary = {
       },
       {
         title: 'Manutenção Web',
-        price: 'A partir de R$350',
+        price: 'A partir de R$94/hora',
         description:
           'Seu site precisa de manutenção? Já possui um site ou sistema que deseja manter, mas precisa atualizar, oferecemos suporte e manutenção de websites.',
         icon: <Wrench size={22} />,

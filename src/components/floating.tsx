@@ -40,7 +40,7 @@ export function FloatingMenu() {
       </button>
 
       <Link
-        href="mailto:luuan.fariaf@gmail.com"
+        href="mailto:hello@luandev.com.br"
         className="p-2 rounded-full bg-secondary transition-colors"
       >
         <Mailbox size={24} />
