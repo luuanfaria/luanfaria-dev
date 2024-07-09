@@ -23,14 +23,14 @@ const dictionary = {
       },
       {
         title: 'Full Website',
-        price: 'From $1599',
+        price: 'From $1.599',
         description:
           'Need a website that includes every detail about your business? A full website can include all the information and services your company offers.',
         icon: <Globe size={22} />,
       },
       {
         title: 'Mobile App',
-        price: 'From $3000',
+        price: 'From $3.000',
         description:
           'Build customer loyalty with a custom on-demand app tailored to your needs. Our apps are developed and customized for both Android and Apple devices.',
         icon: <DeviceMobile size={22} />,
@@ -50,21 +50,21 @@ const dictionary = {
     services: [
       {
         title: 'Landing Page',
-        price: 'A partir de R$2000',
+        price: 'A partir de R$2.000',
         description:
           'Que tal uma página personalizada focada em conversões de leads e informativa? Uma landing page é ideal para esse caso, impacte seus clientes com informações curtas e ações claras.',
         icon: <Browser size={22} />,
       },
       {
         title: 'Website Completo',
-        price: 'A partir de R$4000',
+        price: 'A partir de R$4.000',
         description:
           'Precisa de um site com todos os mínimos detalhes da sua empresa? Um site completo é possível incluir todos as informações e serviços da sua empresa.',
         icon: <Globe size={22} />,
       },
       {
         title: 'Aplicativo Mobile',
-        price: 'A partir de R$15000',
+        price: 'A partir de R$15.000',
         description:
           'Fidelize seus clientes com um aplicativo sob-demanda para suas necessidades. Nossos aplicativos são desenvolvidos e personalizados para Android e Apple.',
         icon: <DeviceMobile size={22} />,
