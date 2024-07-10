@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { Button } from './ui/button'
 import Link from 'next/link'
 
-import { Calendar, CreditCard, Settings, Smile, User } from 'lucide-react'
+import { Calendar } from 'lucide-react'
 
 import {
   CommandDialog,
@@ -14,7 +14,6 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-  CommandShortcut,
 } from '@/components/ui/command'
 import { PaperPlaneTilt } from '@phosphor-icons/react/dist/ssr'
 
