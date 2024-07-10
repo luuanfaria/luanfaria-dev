@@ -5,6 +5,7 @@ import {
   CodeBlock,
   DeviceMobile,
   Globe,
+  Lightbulb,
   Wrench,
 } from '@phosphor-icons/react/dist/ssr'
 import { Card, CardContent, CardHeader } from './ui/card'
@@ -33,6 +34,14 @@ const dictionary = {
         description:
           'Need a website that includes every detail about your business? A full website can include all the information and services your company offers.',
         icon: <Globe size={22} />,
+      },
+      {
+        title: 'Web App',
+        category: 'byDemand',
+        price: 'From R$2.000',
+        description:
+          'Looking for a customized solution for your business? Want to automate a process in your company or whatever your need may be, we can help.',
+        icon: <Lightbulb size={22} />,
       },
       {
         title: 'Mobile App',
@@ -81,6 +90,14 @@ const dictionary = {
         description:
           'Precisa de um site com todos os mínimos detalhes da sua empresa? Um site completo é possível incluir todos as informações e serviços da sua empresa.',
         icon: <Globe size={22} />,
+      },
+      {
+        title: 'Web App',
+        category: 'byDemand',
+        price: 'A partir de R$5.000',
+        description:
+          'Busca uma solução personalizada para seu negócio? Quer automatizar um processo da sua empresa ou qualquer que seja sua necessidade, podemos ajudar.',
+        icon: <Lightbulb size={22} />,
       },
       {
         title: 'Aplicativo Mobile',

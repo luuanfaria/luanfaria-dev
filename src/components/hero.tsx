@@ -22,7 +22,7 @@ const dictionary = {
     title: 'Building Websites for +6 Years.',
     title2: 'Enabling Success for Businesses Worldwide.',
     description:
-      'I am Luan Faria, a Web Designer with over 6 years of experience crafting digital solutions that empower businesses globally. Specializing in user-centric design and strategic optimization. My commitment to excellence has earned me a reputation as a trusted partner in the online business community.',
+      'I am Luan Faria, a Web Designer with over 6 years of experience crafting digital solutions that empower businesses globally. Specialized in user-centered design and strategic optimization. My dedication to excellence has allowed me to work with various clients and projects, providing innovative solutions.',
     press: 'Press',
     pressText: 'anytime to get in touch.',
     placeholder: 'Type a command or search...',
@@ -35,7 +35,7 @@ const dictionary = {
     title: 'Construindo Soluções Digitais há mais de 6 anos.',
     title2: 'Impulsionando Sucesso para Empresas ao Redor do Mundo.',
     description:
-      'Eu sou Luan Faria, um Designer Web com mais de 6 anos de experiência desenvolvendo soluções digitais que capacitam negócios globalmente. Especializado em design centrado no usuário e otimização estratégica. Minha dedicação à excelência me rendeu uma reputação como um parceiro confiável na comunidade de negócios online.',
+      'Eu sou Luan Faria, um Designer Web com mais de 6 anos de experiência desenvolvendo soluções digitais que capacitam negócios globalmente. Especializado em design centrado no usuário e otimização estratégica. Minha dedicação à excelência me permitiu trabalhar com diversos clientes e projetos, proporcionando soluções inovadoras.',
     press: 'Aperte',
     pressText: 'a qualquer momento para entrar em contato.',
     placeholder: 'Digite um comando ou pesquise...',
